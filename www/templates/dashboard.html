@@ -1,0 +1,20 @@
+<ion-view view-title="Dashboard" name="dashboard-view">
+    <ion-nav-buttons side="right">
+        <button class="button icon-left ion-log-out button-stable" ng-click="logout()"> Logout </button>
+    </ion-nav-buttons>
+
+    <ion-content class="padding">
+        <div class="row">
+            <div class="col text-center">
+                <h3 class="title"> WelCome {{user}}</h3> This could be your dashnoard
+                <br><br><br>
+
+                <button class="button button-full button-positive" ng-click=performValidRequest()> Make Valid Request</button>
+                <button class="button button-full button-energized" ng-click=performUnauthorizedRequest()> Make  Request for authorized Request</button>
+                <button class="button button-full button-assertive" ng-click=performInValidRequest()> Make request without valid Token</button>
+                
+                <br><br> {{response}}
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
