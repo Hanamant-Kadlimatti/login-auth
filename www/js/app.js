@@ -60,6 +60,24 @@ angular.module('starter', ['ionic', 'ngMockE2E'])
      }
   })
 
+  .state('main.favourite', {
+    url : 'main/favourite',
+     views : {
+       'favourite-tab' : {
+        templateUrl : 'templates/favourite.html',
+       }
+     }
+  })
+
+  .state('main.inbox', {
+    url : 'main/inbox',
+     views : {
+       'inbox-tab' : {
+        templateUrl : 'templates/inbox.html',
+       }
+     }
+  })
+
   .state('main.admin', {
     url : 'main/admin',
      views : {

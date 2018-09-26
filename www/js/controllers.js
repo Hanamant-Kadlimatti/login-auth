@@ -28,9 +28,6 @@ angular.module('starter')
 })
 
 
-
-
-
 .controller('LoginCtrl', function($scope, $state, $ionicPopup, AuthService){
      $scope.data = {}
 
